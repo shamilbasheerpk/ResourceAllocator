@@ -1,0 +1,28 @@
+
+<div class="section portfolio-section">
+ 
+    <div class="container-fluid">
+      <div class="row mb-5 no-gutters">
+       
+    
+        <div *ngFor="let i of display" class="col-sm-6 col-md-6 col-lg-6" data-aos="fade" data-aos-delay="200">
+          <button (click)="labchooser(i.name)" style="border:none;padding: 0;background: none;"  value={{i.name}}  class="work-thumb">
+            <div class="work-text">
+            <h2>{{i.name}}</h2>
+              <p>ICT ACADEMY</p>
+            </div>
+            <img src={{i.img}}   width="1000px" alt="  Image" class="img-fluid">
+          </button>
+        </div>
+    
+    
+        
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p><a href="portfolio.html" class="btn btn-outline-white px-4 py-3">More Portfolio</a></p>
+        </div>
+      </div>
+    </div>
+    </div>

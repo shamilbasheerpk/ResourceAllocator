@@ -1,0 +1,81 @@
+<!-- Google font -->
+
+
+<!-- Bootstrap -->
+
+<div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+     
+        <div class="booking-form">
+          <div class="form-header">
+            
+            <h1>QUICK Allocator</h1>
+          </div>
+
+
+
+
+
+          <form (ngSubmit)="booker()">
+            <input type="hidden" name="status" value="pending" ng-value="pending" [(ngModel)]="booking.status" />
+            <input type="hidden" name="name" [(ngModel)]="booking.name">
+            <div class="form-group">
+              <span class="form-label">Email</span>
+              <input class="form-control" type="email" name="email" placeholder="Enter your email"
+                [(ngModel)]="booking.email" required>
+            </div>
+
+
+            <div class="form-group">
+              <span class="form-label">Phone</span>
+              <input class="form-control" type="tel" name="phone" placeholder="Enter your phone number"
+                [(ngModel)]="booking.phone" required>
+            </div>
+            <!-- <div class="form-group">
+                            <span class="form-label">Location</span>
+                            <input class="form-control" type="text" placeholder="Location">
+                        </div> -->
+            <div class="form-group">
+              <span class="form-label">Location</span>
+              <div class="form-group">
+                <select  class="form-control" name="location" [(ngModel)]="booking.location" >
+                  <option>TVM</option>
+                  <option>CLT</option>
+                  <option>TCR</option>
+
+                </select>
+                <span class="select-arrow"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <span class="form-label">ROOM</span>
+              <div class="form-group">
+                <select class="form-control" name="room" [(ngModel)]="booking.room" required>
+                  <option>LAB</option>
+                  <option>CLASSROOM</option>
+
+                </select>
+                <span class="select-arrow"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="form-group">
+                  <span class="form-label">Pickup Date</span>
+                  <input class="form-control" name="date" type="date" [(ngModel)]="booking.date" required />
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-btn">
+              <button type="submit" value="submit" class="submit-btn">Request Now</button>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </div>

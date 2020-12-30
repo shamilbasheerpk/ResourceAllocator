@@ -1,0 +1,50 @@
+
+<!-- Google font -->
+
+
+<!-- Bootstrap -->
+
+<div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="booking-form">
+           
+  
+  
+  
+  
+  
+            <form (ngSubmit)="booker()">
+             
+              <div class="form-group">
+                <span class="form-label">PICK A DATE</span>
+                
+                <input class="form-control" name="date" type="date" [(ngModel)]="booking.date" required />
+                  
+              </div>
+  
+  
+             
+              <!-- <div class="form-group">
+                              <span class="form-label">Location</span>
+                              <input class="form-control" type="text" placeholder="Location">
+                          </div> -->
+            
+            
+             
+  
+              <div class="form-btn">
+                <button type="submit" value="submit" class="submit-btn">CHECK AVAILABILITY</button>
+              </div>
+              <br>
+              <div class="form-btn">
+                <button (click)="redrt()" type="button" value="submit" class="submit-btn">CONTINUE</button>
+              </div>
+  
+  
+            </form>
+          </div>
+        </div>
+      </div>
+  
