@@ -23,7 +23,7 @@ admin can't add new request.
 
 ..........admin........
 
->funtion
+funtion
 .........
 
 add user
@@ -33,7 +33,7 @@ reject a booking request
 delete a booking request
 
 
->views
+views
 ...........
 
 requests manager---location based filter
@@ -42,13 +42,13 @@ user data base manager
 
 .......user...........
 
->funtion
+funtion
 .....
 
 add a request
 delete a request
 
->views
+views
 ........
 book room(quick method)
 book room( Ui based)
